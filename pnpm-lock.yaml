@@ -12,8 +12,8 @@ importers:
         specifier: ^1.11.1
         version: 1.11.1
       '@natsuneko-laboratory/vpmpackage':
-        specifier: ^0.4.0
-        version: 0.4.0
+        specifier: ^0.5.0
+        version: 0.5.1
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.2.7
@@ -99,8 +99,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@natsuneko-laboratory/vpmpackage@0.4.0':
-    resolution: {integrity: sha512-cGBMn3kkDxOXhFjT235YtEO1BdISogqJERhG5J5+EO6mwFwgZaV1xDCx8sX/bNh+mAoLLU22C17eHhYglZm/lg==}
+  '@natsuneko-laboratory/vpmpackage@0.5.1':
+    resolution: {integrity: sha512-hd789G4zLIb1BcHI2Md9cD/TXzRHx++2PdtY+Dw6LU3zuxVPnJAOaibWli/TTePnIG/N/Iu3FLuvPd/t54NT3w==}
 
   '@types/node@24.9.1':
     resolution: {integrity: sha512-QoiaXANRkSXK6p0Duvt56W208du4P9Uye9hWLWgGMDTEoKPhuenzNcC4vGUmrNkiOKTlIrBoyNQYNpSwfEZXSg==}
@@ -122,6 +122,10 @@ packages:
 
   jsonfile@6.2.0:
     resolution: {integrity: sha512-FGuPw30AdOIUTRMC2OMRtQV+jkVj2cfPqSeWXv1NEAJ1qZ5zb1X6z1mFhbfOB/iy3ssJCD+3KuZ8r8C3uVFlAg==}
+
+  normalize-path@3.0.0:
+    resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
+    engines: {node: '>=0.10.0'}
 
   tunnel@0.0.6:
     resolution: {integrity: sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==}
@@ -198,10 +202,11 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@natsuneko-laboratory/vpmpackage@0.4.0':
+  '@natsuneko-laboratory/vpmpackage@0.5.1':
     dependencies:
       adm-zip: 0.5.16
       fs-extra: 11.3.2
+      normalize-path: 3.0.0
 
   '@types/node@24.9.1':
     dependencies:
@@ -224,6 +229,8 @@ snapshots:
       universalify: 2.0.1
     optionalDependencies:
       graceful-fs: 4.2.11
+
+  normalize-path@3.0.0: {}
 
   tunnel@0.0.6: {}
 

@@ -73,7 +73,7 @@ async function getInputType(): Promise<"package" | "packages"> {
   }
 
   throw new Error(
-    "@natsuneko-laboratory/create-vpmpackage requires one of meta, package or packages input"
+    "@natsuneko-laboratory/create-vpmpackage requires one of package or packages input"
   );
 }
 
